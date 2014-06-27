@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="col-md-6" ng-controller="profileController" ng-init="init('networkProfile')">
+		<h2>Network Profile</h2>
+		<ul>
+			<li ng-repeat="p in ps">{{ p.name }}</li>
+		</ul>
+		<input class="form-control" placeholder="Enter NP Name To Add or Delete" ng-model="npName"></input>
+		<br>
+		<button class="btn btn-primary" ng-click="add()">Add NP</button>
+		<button class="btn btn-danger" ng-click="delete()">Delete NP</button>
+	</div>
+	<div class="col-md-6" ng-controller="profileController" ng-init="init('trafficProfile')">
+		<h2>Traffic Profile</h2>
+		<ul>
+			<li ng-repeat="p in ps">{{ p.name }}</li>
+		</ul>
+		<input class="form-control" placeholder="Enter TP Name To Add or Delete" ng-model="npName"></input>
+		<br>
+		<button class="btn btn-primary" ng-click="add()">Add NP</button>
+		<button class="btn btn-danger" ng-click="delete()">Delete NP</button>
+	</div>
+</div>
